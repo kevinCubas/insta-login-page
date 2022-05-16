@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+:root {
+  --body-bg: #fafafa;
+  --box-bg: #fff;
+  --border-box: 1px solid #dbdbdb;
+  --border-image: solid 1px #efefef;
+  --button: #0095f6;
+  --primary-color:  #262626;
+  --secondary-color: #8e8e8e;
+  --signup-link: #0095f6;
+  --border-button: 1px solid transparent;
+}
+
+#app {
+  height: 100vh;
+  background-color: var(--body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex-grow: 1;
+}
+
+article {
+  margin: 32px auto 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  max-width: 935px;
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+#imagesContainer {
+  display: flex;
+  align-self: center;
+  background-image: url(assets/phone-image.png);
+  background-repeat: no-repeat;
+  background-size: 468.32px 634.15px;
+  background-position: -46px 0;
+  flex-basis: 380.32px;
+  height: 581.15px;
+  margin-bottom: 12px;
+  margin-right: 32px;
+  position: relative;
+}
+
+.allImages {
+  margin: 27px 0 0 113px;
+  position: relative;
+}
+
+.image-slide {
+  position: absolute;
+  height: 538.84px;
+  opacity: 0;
+  top: 0;
+  visibility: hidden;
+  width: 250px;
+  transition: opacity 1.5s ease-in;
+}
+
+.active-visibility {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s ease-in-out;
+}
+
+#form-container {
+  color: var(--primary-color);
+  flex-grow: 1;
+  margin-top: 12px;
+  max-width: 350px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--box-bg);
+  border: var(--border-box);
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+}
+
+#instagram-logo {
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-image {
+  border: var(--border-image);
+  border-radius: 100px;
+  height: 84px;
+  width: 84px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.form-button {
+  gap: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+#login-button {
+  margin-top: 1rem;
+  padding: 5px 9px;
+  width: 50%;
+  background-color: var(--button);
+  border: var(--border-button);
+  border-radius: 4px;
+  color: var(--box-bg);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#remove-button {
+  padding: 5px 9px;
+  margin-bottom: 1.25rem;
+}
+
+.not-account-button {
+  appearance: none;
+  color: var(--button);
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sign-up {
+  color: var(--secondary-color);
+  margin: 0 0 10px;
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+.img-height {
+  height: 40px;
+  margin-right: 8px;
+}
+
+#get-app-text {
+  margin: 10px 20px 10px 20px;
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button-links {
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+@media (max-width: 900px) {
+  #imagesContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  #form-container {
+    width: 100%;
+  }
+
+  .form-content {
+    margin: 0;
+    background-color: var(--body-bg);
+  }
+
+  #login-button {
+    width: 80%;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .button-links {
+    margin: 0;
+  }
+  
+  .img-height {
+    height: 35px;
+  }
+}

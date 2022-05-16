@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="assets/insta-favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Insta login page</title>
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <article>
+          <div id="imagesContainer">
+            <div id="allImages" class="allImages">
+              <img
+                src="assets/feed-image.png"
+                class="image-slide active-visibility"
+                alt="instagram feed image. A black woman holding a black and white cat"
+              />
+              <img
+                src="assets/dm-image.png"
+                class="image-slide"
+                alt="instagram direct message image"
+              />
+              <img
+                src="assets/profile-image.png"
+                class="image-slide"
+                alt="instagram personal profile image"
+              />
+              <img
+                src="assets/post-reels-image.png"
+                class="image-slide"
+                alt="instagram post section image"
+              />
+            </div>
+          </div>
+          <div id="form-container">
+            <div class="form-content">
+              <div id="instagram-logo" class="flex">
+                <img src="assets/instagram-logo.png" alt="Instagram logo" />
+              </div>
+              <div class="flex">
+                <img
+                  src="assets/profile-eren.png"
+                  class="profile-image"
+                  alt="user image"
+                />
+                <div class="form-button flex">
+                  <button type="button" id="login-button">
+                    Continue as Eren
+                  </button>
+                  <button
+                    type="button"
+                    id="remove-button"
+                    class="not-account-button"
+                  >
+                    Remove Account
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="form-content sign-up flex">
+              <p class="not-account">Not Eren?</p>
+              <p class="not-account">
+                <button class="not-account-button">Switch Accounts</button> or
+                <button class="not-account-button">Sign Up</button>
+              </p>
+            </div>
+            <div class="download-app flex">
+              <p id="get-app-text">Get the app.</p>
+              <div class="button-links">
+                <a href="#"
+                  ><img
+                    src="assets/app-store.png"
+                    class="img-height"
+                    alt="app store"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="assets/play-store.png"
+                    class="img-height"
+                    alt="play store"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
