@@ -10,4 +10,3 @@ function displayImage() {
 }
 
 setInterval(() => displayImage(), 4000)
-console.log(allImages)
