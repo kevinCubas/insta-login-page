@@ -9,4 +9,4 @@ function displayImage() {
   images[index].classList.add('active-visibility')
 }
 
-setInterval(() => displayImage(), 4000)
+setInterval(displayImage, 4000)
