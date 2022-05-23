@@ -2,7 +2,18 @@
   Insta login page
 </h1>
 
-<p align="center"><a href="#English">English</a> | <a href="#portuguese">Português</a></p>
+<p align="center"><a href="#english">English</a> | <a href="#portuguese">Português</a></p>
+
+## 🏃‍♂️ Running the project
+
+Clone or fork the repository
+
+Use **yarn** or **npm install** to install project dependencies. \
+Then start the project.
+
+```cl
+npm run dev
+```
 
 ## English
 ### 💻 the project
